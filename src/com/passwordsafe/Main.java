@@ -1,5 +1,7 @@
 package com.passwordsafe;
 
+import singleton.Logger;
+
 import java.io.File;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -81,7 +83,8 @@ public class Main {
                     System.out.println("Enter new master password ! (Warning you will loose all already stored passwords)");
                     String masterPw = read.next();
                     masterRepository.setMasterPasswordPlain(masterPw);
-                    // urgent hotfix delete old passwords after changing the master
+                    Logger.info("new password set");
+                    // urgent hotfix delete old passwords after changing the master6
                     File oldPasswords = new File("./passwords.pw");
                     if (oldPasswords.isDirectory())
                     {

@@ -1,4 +1,4 @@
-package at.lecture.singleton;
+package singleton;
 
 public class Logger {
 
@@ -10,7 +10,7 @@ public class Logger {
         return instance;
     }
 
-    public void info(String message) {
+    public static void info(String message) {
         System.out.println("[INFO] " + message);
     }
 }

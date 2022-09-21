@@ -1,6 +1,4 @@
-package at.lecture.singleton;
-
-import at.lecture.factory.App;
+package singleton;
 
 public class Main {
 
